@@ -1,0 +1,77 @@
+/* ////////////////////////////////// */
+/* SMALLER LAPTOP (1304px) */
+/* ////////////////////////////////// */
+@media (max-width: 81.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* ////////////////////////////////// */
+/* LANDSCAPE TABLETS (1040px) */
+/* ////////////////////////////////// */
+@media (max-width: 65em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* ////////////////////////////////// */
+/* POTTRAIT TABLETS (848px) */
+/* ////////////////////////////////// */
+@media (max-width: 53em) {
+  .section--signInForm button {
+    padding: 1.2rem 4.8rem;
+    justify-content: center;
+  }
+
+  .container {
+    width: 80%;
+    grid-template-columns: 1fr;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 3.2rem;
+    border-top-right-radius: 3.2rem;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .bg-pic {
+    height: 100vh;
+    grid-row: 1/2;
+    border-bottom-right-radius: 0;
+  }
+}
+
+/* ////////////////////////////////// */
+/* TABLETS (680px) */
+/* ////////////////////////////////// */
+@media (max-width: 42.5em) {
+  .container {
+    width: 100%;
+  }
+
+  .bg-pic {
+    height: 90vh;
+  }
+}
+
+/* ////////////////////////////////// */
+/* SMARTPHONE (488px) */
+/* ////////////////////////////////// */
+@media (max-width: 30.5em) {
+  .section--signInForm button {
+    padding: 1.2rem 1.8rem;
+    justify-content: center;
+  }
+
+  .bg-pic {
+    height: 70vh;
+  }
+
+  .features {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

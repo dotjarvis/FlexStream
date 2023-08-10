@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="FlexStream brings you a captivating cinematic journey, featuring a diverse selection of timeless classics and thrilling blockbusters. Immerse yourself in the magic of storytelling, as our curated collection of films transports you to new worlds, evokes emotions, and sparks your imagination. Whether you're a fan of heartwarming dramas, pulse-pounding action, thought-provoking science fiction, or side-splitting comedies, FlexStream has something for every cinephile. Get ready to embark on an unforgettable movie-watching adventure, where every frame tells a story and every moment creates a memory."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>FlexStream &mdash; Stream Movies at Comfort</title>
+    <script defer src="script.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </head>
+
+  <link rel="icon" href="./imgs/icons/favicon-192.png" />
+  <link rel="apple-touch-icon" href="./imgs/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="manifest" href="./manifest.json" />
+
+  <body>
+    <header class="header header--top">
+      <a href="#" class="home">
+        <img src="./imgs/icons/vr.svg" alt="vr icon" />
+
+        <span>FlexStream</span>
+      </a>
+      <nav class="nav hidden">
+        <ul class="nav-list">
+          <li class="nav-detail movie">movie</li>
+          <li class="nav-detail tv-show">Top Rated</li>
+          <li class="nav-detail tv-series">Tv Series</li>
+          <li class="nav-detail pricing">pricing</li>
+          <li><button class="btn btn--big btn-signin">sign in</button></li>
+        </ul>
+      </nav>
+
+      <div class="header-tools">
+        <ion-icon name="close-outline"></ion-icon>
+        <input type="text" placeholder="Type movie" class="movie-input" />
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="globe-outline"></ion-icon>
+
+        <label for="lang">
+          <select name="lan" class="lang" id="lang">
+            <option value="en">EN</option>
+            <option value="au">AU</option>
+            <option value="ar">AR</option>
+            <option value="tu">TU</option>
+          </select>
+        </label>
+
+        <button class="menu-btns hidden">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section--hero">
+        <div class="hero grid grid-template--2">
+          <div class="hero-text">
+            <p class="h1-intro">FlexStream</p>
+            <h1 class="primary-text">
+              Unlimited <span class="highlight">Movie</span>, TVs Shows, & More.
+            </h1>
+            <div class="hero-movie-details">
+              <div class="btns">
+                <button class="btn btn--small btn-pg">pg 18</button>
+                <button class="btn btn--small btn-hd">hd</button>
+              </div>
+
+              <p class="hero-movie-type">
+                <span>Romance, </span>
+                <span>Drama</span>
+              </p>
+              <div class="time-duration">
+                <p class="hero-movie-date">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <span class="release-date">2022</span>
+                </p>
+                <p class="hero-movie-duration">
+                  <ion-icon name="time-outline"></ion-icon>
+                  <span class="duration">128 min</span>
+                </p>
+              </div>
+            </div>
+
+            <button class="btn btn--big btn-watch-now">
+              <ion-icon name="play-outline"></ion-icon> <span>watch now</span>
+            </button>
+          </div>
+          <div class="empty-div"></div>
+        </div>
+
+        <p class="top-nav-arrow">
+          <ion-icon name="arrow-up-outline"></ion-icon>
+        </p>
+      </section>
+
+      <section class="section-upcoming">
+        <div class="container">
+          <p class="h2-intro">online streaming</p>
+          <div class="top grid grid-template--2">
+            <h2 class="secondary-text">Upcoming Movies</h2>
+            <div class="upcoming--btns">
+              <button class="btn btn-active btn--big btn-up btn-movies">
+                Movies
+              </button>
+              <button class="btn btn--big btn-up btn-tv">TV Shows</button>
+              <button class="btn btn--big btn-up btn-anime">Anime</button>
+            </div>
+          </div>
+          <div
+            class="inner-container upcoming_container grid grid-template--4"
+          ></div>
+        </div>
+      </section>
+
+      <section class="section--movie-highlight hidden">
+        <div class="video">
+          <video hidden controls>
+            <source src="" type="/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="video">
+            <div id="player"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--services">
+        <div class="container grid grid-template--2">
+          <div class="service-img grid">
+            <div class="img-support">
+              <img src="./imgs/img/service-banner.jpg" alt="service banner" />
+            </div>
+            <button class="btn btn--big btn-download">
+              <span>download</span>
+              <ion-icon name="download-outline"></ion-icon>
+            </button>
+          </div>
+          <div class="services-texts">
+            <p class="h2-intro">
+              <span class="yellow-line"></span>
+              <span class="text">Our services</span>
+            </p>
+
+            <h2 class="tertiary-text--1">Download Your Shows.</h2>
+            <h2 class="tertiary-text--1 margin-btm--small">Watch Offline.</h2>
+            <p>
+              Elevate your entertainment with our versatile services. Download
+              and enjoy your favorite shows anywhere. Unleash the convenience of
+              offline viewing on the go.
+            </p>
+
+            <div class="service grid margin-btm--small">
+              <ion-icon name="tv"></ion-icon>
+              <h3 class="tertiary-text--2">Enjoy on Your TV.</h3>
+              <p>
+                Immerse yourself in a world of entertainment on your TV with
+                seamless streaming and make the most of your leisure time.
+              </p>
+            </div>
+
+            <hr class="hr" />
+
+            <div class="service grid">
+              <ion-icon name="videocam"></ion-icon>
+              <h3 class="tertiary-text--2">Watch Everywhere.</h3>
+              <p>
+                Elevate your movie-watching journey and enjoy the magic of
+                cinema wherever you are.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--toprated">
+        <div class="container">
+          <p class="h2-intro">online streaming</p>
+          <h2 class="secondary-text">Top Rated Movies</h2>
+
+          <div class="shows-types">
+            <button class="btn btn--big btn-rated btn-movies">movies</button>
+            <button class="btn btn--big btn-rated btn-tvshow">tv shows</button>
+            <button class="btn btn--big btn-rated btn-doc">documentary</button>
+            <button class="btn btn--big btn-rated btn-sports">sports</button>
+          </div>
+
+          <div
+            class="inner-container toprated_container grid grid-template--4"
+          ></div>
+        </div>
+      </section>
+
+      <section class="section--series">
+        <div class="container">
+          <p class="h2-intro">best tv series</p>
+          <h2 class="secondary-text">World Best TV Series</h2>
+          <div
+            class="inner-container series_container grid grid-template--4"
+          ></div>
+        </div>
+      </section>
+
+      <section class="section-pricing">
+        <div class="container">
+          <p class="h2-intro">Pricing plans</p>
+          <h2 class="secondary-text">Get Premium free for 1 month</h2>
+          <p class="pricing-time">
+            <label>
+              <span>Monthly</span>
+              <input class="toggle-checkbox" type="checkbox" />
+              <span>yearly</span>
+            </label>
+          </p>
+          <p class="offer">Upto 40% off on yearly subscription</p>
+
+          <div class="plans-list grid grid-template--3">
+            <div class="plan plan--free">
+              <h3 class="secondary-text">Basic</h3>
+              <p class="h3-intro">Starter</p>
+              <p class="price-tag">
+                <span>$</span> <span class="prices">99</span>
+                <span class="time-frame">/month</span>
+              </p>
+
+              <ul class="benefits-list">
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>Ad-free Streaming</p>
+                </li>
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>1080p video quality</p>
+                </li>
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>2 Signin devices</p>
+                </li>
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>30 movies Download</p>
+                </li>
+                <li class="benefits-detail">
+                  <ion-icon name="close-outline"></ion-icon>
+                  <p>Casting</p>
+                </li>
+              </ul>
+
+              <button class="btn btn--pricing">Get started</button>
+            </div>
+
+            <div class="plan plan--standard">
+              <h3 class="secondary-text">Standard</h3>
+              <p class="h3-intro">Better results</p>
+              <p class="price-tag">
+                <span>$</span> <span class="prices">299</span>
+                <span class="time-frame">/month</span>
+              </p>
+
+              <ul class="benefits-list">
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>Ad-free Streaming</p>
+                </li>
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>4k video quality</p>
+                </li>
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>4 Signin devices</p>
+                </li>
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>90 movies Download</p>
+                </li>
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>Supports Casting</p>
+                </li>
+              </ul>
+
+              <button class="btn btn--pricing">Get started</button>
+            </div>
+
+            <div class="plan plan--premium">
+              <h3 class="secondary-text">Premium</h3>
+              <p class="h3-intro">Go all in one</p>
+              <p class="price-tag">
+                <span>$</span> <span class="prices">499</span>
+                <span class="time-frame">/month</span>
+              </p>
+
+              <ul class="benefits-list">
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>Ad-free Streaming</p>
+                </li>
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>8k video quality</p>
+                </li>
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>7 Signin devices</p>
+                </li>
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>Unlimited Downloads</p>
+                </li>
+                <li class="benefits-detail">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <p>Supports multicasting</p>
+                </li>
+              </ul>
+              <button class="btn btn--pricing">Get started</button>
+            </div>
+          </div>
+
+          <h2 class="secondary-text why-premiuim">Why go Premium?</h2>
+
+          <ul class="prem-reason grid grid-template--4">
+            <li class="reason">
+              <ion-icon name="cloud-download-outline"></ion-icon>
+              <p class="text">Download Movies</p>
+              <p class="extra-text">Enjoy watching offline</p>
+            </li>
+
+            <li class="reason">
+              <ion-icon name="radio-outline"></ion-icon>
+              <p class="text">Multiple devices</p>
+              <p class="extra-text">Stream on mobile</p>
+            </li>
+
+            <li class="reason">
+              <ion-icon name="hand-right-outline"></ion-icon>
+              <p class="text">Ad-free Streaming.</p>
+              <p class="extra-text">Enjoy shows uninterrupted.</p>
+            </li>
+
+            <li class="reason">
+              <ion-icon name="library-outline"></ion-icon>
+              <p class="text">Unlimited Movies.</p>
+              <p class="extra-text">Just hit next.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section--CTA">
+        <div class="container grid">
+          <div class="cta-text">
+            <h3 class="tertiary-text--2">trial start first 30 days.</h3>
+            <p class="cta-more">
+              Enter your email to create or restart your membership.
+            </p>
+          </div>
+
+          <form class="email-holder grid">
+            <input
+              class="email-input"
+              placeholder="Type your email"
+              type="email"
+            />
+            <button class="btn btn--big btn-submit">Get started</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="section--footer">
+        <div class="container grid grid-template--2">
+          <header class="head grid grid-template--2">
+            <a href="#" class="home">
+              <img src="./imgs/icons/vr.svg" alt="vr icon" />
+              <span>FlexStream</span>
+            </a>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-detail movie">movie</li>
+                <li class="nav-detail tv-show">Top Rated</li>
+                <li class="nav-detail tv-series">Tv Series</li>
+                <li class="nav-detail pricing">pricing</li>
+              </ul>
+            </nav>
+          </header>
+
+          <div class="tools-media-links grid grid-template--2">
+            <div class="tools-help">
+              <ul class="help">
+                <li><a href="#" class="help-detail"> faq</a></li>
+                <li><a href="#" class="help-detail"> help center</a></li>
+                <li><a href="#" class="help-detail"> terms of use</a></li>
+                <li><a href="#" class="help-detail"> privacy</a></li>
+              </ul>
+            </div>
+
+            <div class="social-media">
+              <ul class="media">
+                <li>
+                  <a href="#" class="media-detail">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="media-detail">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="media-detail">
+                    <ion-icon name="globe-outline"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="media-detail">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="last-foot-div grid grid-template--2">
+        <p>&copy; 2023 <span>FlexStream</span>. All Rights Reserved</p>
+        <div role="img" aria-label="payment options">
+          <img src="./imgs/img/footer-bottom-img.png" alt="payment options" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

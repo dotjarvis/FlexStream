@@ -1,0 +1,203 @@
+.section--signInForm {
+  padding: 0 1.8rem;
+  margin: none;
+  position: relative;
+}
+
+.container {
+  max-width: 112rem;
+  margin: 2.4rem auto;
+  padding: 1.8rem;
+  border-bottom-right-radius: 4.8rem;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 1.2rem;
+  background-color: #fefefa;
+  box-shadow: 0 0 1.2rem 1.2rem rgba(0, 0, 0, 0.01);
+}
+
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+/* ////////////////////////////// */
+/* FIRST PART */
+/* ///////////////////////////// */
+.section--signInForm form {
+  padding: 3.2rem;
+}
+
+.section--signInForm .primary--text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+  color: var(--citrine);
+}
+
+.section--signInForm .secondary--text {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.section--signInForm .h2-intro {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: none;
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+
+.section--signInForm input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  padding: 1.2rem 0;
+
+  margin-bottom: 1.2rem;
+  outline: none;
+}
+
+.section--signInForm input::placeholder {
+  color: #999;
+}
+
+.section--signInForm input[type='password'] {
+  margin-bottom: 3.2rem;
+}
+
+.section--signInForm button {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 1.2rem 7.2rem;
+  border: none;
+  border-radius: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.8rem;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section--signInForm button:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.section--signInForm .auth {
+  display: inline-block;
+  color: #f7f7f7;
+  background-color: #111;
+  text-align: center;
+}
+
+form img {
+  width: 2rem;
+}
+
+.hr-line {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 3.2rem;
+  margin-bottom: -1rem;
+}
+
+.hr {
+  display: inline-block;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.171);
+  width: 100%;
+}
+
+.hr-line .h2-intro {
+  white-space: nowrap;
+}
+
+.sign {
+  font-size: 1.2rem;
+  color: #222;
+  text-align: center;
+}
+
+.sign .hidden {
+  display: none;
+}
+
+.auth.hidden {
+  display: none;
+}
+
+/* ////////////////////////////// */
+/* SECOND PART */
+/* ////////////////////////////// */
+.bg-pic {
+  color: #f7f7f7;
+  background-image: url('./imgs/cv-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  border-bottom-right-radius: 2.8rem;
+  border-top-left-radius: 2.8rem;
+  padding: 2.8rem 3.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  box-shadow: 0 0 0.8rem 0.8rem rgba(0, 0, 0, 0.04);
+}
+
+.bg-pic .secondary--text {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.pic-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 2.8rem;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.features p {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  border: 1px solid #999;
+  border-radius: 10rem;
+}
+
+/* ALERT BOX */
+.alert-box {
+  font-size: 1.8rem;
+  padding: 1.2rem 2.4rem;
+  position: absolute;
+  border-radius: 0.8rem;
+  top: 0;
+  left: 50%;
+  transform: translate(0 -50%);
+
+  background-color: var(--citrine);
+  color: var(--rich-black-fogra-29);
+}

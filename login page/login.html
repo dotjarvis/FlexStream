@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in | Sign up</title>
+
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./loginquery.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script defer src="./login.js"></script>
+  </head>
+
+  <body>
+    <section class="section--signInForm">
+      <div class="container">
+        <form action="" method="post">
+          <h1 class="primary--text">FlexStream</h1>
+          <h2 class="secondary--text">Create an account</h2>
+
+          <p class="h2-intro">
+            Get access to exclusive to Movies and TV shows at your comfort.
+          </p>
+
+          <input required type="text" placeholder="Username" class="username" />
+          <input required type="email" placeholder="Email" class="email" />
+
+          <input
+            required
+            type="password"
+            placeholder="Password"
+            class="password"
+          />
+
+          <button class="auth sigh-up">Create account</button>
+          <button class="auth sigh-in hidden">Log In</button>
+
+          <div class="sign">
+            <p>Already have an account? <a href="#">Log in</a></p>
+            <p class="hidden">Don't have an account? <a href="#">Sign up</a></p>
+          </div>
+
+          <div class="hr-line">
+            <hr class="hr" />
+            <p class="h2-intro">Instead use.</p>
+            <hr class="hr" />
+          </div>
+
+          <button class="google">
+            <img src="./imgs/google.svg" alt="google logo" />
+            <p class="form-text">Continue with Google</p>
+          </button>
+          <button class="facebook">
+            <img src="./imgs/facebook.svg" alt="facebook logo" />
+            <p class="form-text">Continue with facebook</p>
+          </button>
+          <button class="apple">
+            <img src="./imgs/apple1.svg" alt="apple logo" />
+            <p class="form-text">Continue with apple</p>
+          </button>
+          <button class="twitter">
+            <img src="imgs/twitter.svg" alt="twitter logo" />
+            <p class="form-text">Continue with Twitter</p>
+          </button>
+        </form>
+
+        <div class="bg-pic" role="img" aria-label="Movie poster">
+          <h2 class="secondary--text">
+            Discover the Best Movies at Your Comfort
+          </h2>
+          <p class="pic-text">
+            Discover Incredible Architecture, Lively Communities, and Stunning
+            Locations, All Set in Unbelievable Scenarios, Only on FlexStream.
+          </p>
+          <div class="features">
+            <p>
+              <ion-icon name="tv-outline"></ion-icon>
+              <span>Enjoy on Your TV.</span>
+            </p>
+            <p>
+              <ion-icon name="videocam-outline"></ion-icon>
+              <span>Watch Everywhere.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
