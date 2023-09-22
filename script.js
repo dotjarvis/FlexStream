@@ -19,8 +19,6 @@ const section__tvSeries = document.querySelector(".section--series");
 const section__pricing = document.querySelector(".section-pricing");
 
 const nav = document.querySelector(".header--top .nav");
-const close__icon = document.querySelector(`ion-icon[name='close-outline']`);
-const search__icon = document.querySelector(`ion-icon[name='search-outline']`);
 
 const pricing__mothlyYearly = document.querySelector(".toggle-checkbox");
 
@@ -200,9 +198,7 @@ topArr__nav.addEventListener("click", (e) => {
 header.addEventListener("click", (e) => {
   const clicked = e.target;
 
-  if (clicked === search__icon) header.classList.add("search-nav");
-  else if (clicked === close__icon) header.classList.remove("search-nav");
-  else if (clicked.classList.contains("btn-signin"))
+  if (clicked.classList.contains("btn-signin"))
     window.location.href = "./login page/login.html";
 
   smoothScroll_helper(clicked, "tv-show", section__topRated);

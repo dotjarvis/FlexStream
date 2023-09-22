@@ -139,6 +139,10 @@ p ion-icon {
   color: var(--citrine);
 }
 
+.section--hero a {
+  text-decoration: none;
+}
+
 .btn-watch-now {
   display: flex;
   align-items: center;
