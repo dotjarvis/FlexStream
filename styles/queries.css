@@ -16,7 +16,7 @@
 /* LANDSCAPE TABLETS (1000px) */
 /* ////////////////////////////////// */
 @media (max-width: 62.5em) {
-  ion-icon[name='search-outline'] {
+  ion-icon[name="search-outline"] {
     right: 13.8rem;
   }
 
@@ -219,7 +219,7 @@
     width: 80%;
   }
 
-  /* SECTION PROCING */
+  /* SECTION PRiCING */
   .plans-list.grid-template--3 {
     grid-template-columns: 1fr;
   }
@@ -284,11 +284,43 @@
   }
 
   /* SECTION HIGHTLIGHT */
+
+  .section--movie-highlight .container {
+    grid-template-columns: 1fr;
+    /* gap: 3.2rem; */
+  }
+
+  .section--movie-highlight .btn-download {
+    padding: 1.8rem;
+    /* font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 0.8rem;
+  color: #000;
+  background-color: var(--citrine); */
+
+    /* display: flex; */
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    /* width: fit-content; */
+    /* 
+    gap: 1.2rem;
+    */
+    /* justify-self: center; */
+    /* margin-top: 0.4rem; */
+  }
+
+  .section--movie-highlight .btn-download span {
+    /* writing-mode: vertical-lr; */
+    writing-mode: horizontal-tb;
+    text-orientation: upright;
+    /* text-orientation: sideways-right; */
+  }
   .share-watch.grid {
     grid-template-columns: auto 1fr;
   }
 
-  ion-icon[name='share-social'] {
+  ion-icon[name="share-social"] {
     font-size: 1.8rem;
   }
 
