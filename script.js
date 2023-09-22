@@ -4,6 +4,7 @@ const container__upcoming = document.querySelector(".upcoming_container");
 const container__topRated = document.querySelector(".toprated_container");
 const container__tvSeries = document.querySelector(".series_container");
 const topArr__nav = document.querySelector(".top-nav-arrow");
+const btn__pricing = document.querySelectorAll(".btn--pricing");
 
 const header = document.querySelector(".header");
 const main = document.querySelector(`main`);
@@ -41,6 +42,13 @@ const hide_showTopNavArrow = () => {
 };
 
 hide_showTopNavArrow();
+
+btn__pricing.forEach((el) =>
+  el.addEventListener(
+    "click",
+    () => (window.location.href = "./login page/login.html")
+  )
+);
 
 const rendering_Movie = (movies, section) => {
   section.innerHTML = ``;
