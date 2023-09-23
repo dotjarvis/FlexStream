@@ -371,7 +371,8 @@
             </p>
           </div>
 
-          <form class="email-holder grid">
+          <form netlify netlify-honeypot="bot-field" class="email-holder grid">
+            <input hidden name="bot-field" />
             <input
               class="email-input"
               placeholder="Type your email"
@@ -392,7 +393,7 @@
             </a>
             <nav class="nav">
               <ul class="nav-list">
-                <li class="nav-detail movie">movie</li>
+                <li class="nav-detail movie">Movies</li>
                 <li class="nav-detail tv-show">Top Rated</li>
                 <li class="nav-detail tv-series">Tv Series</li>
                 <li class="nav-detail pricing">pricing</li>
@@ -413,23 +414,33 @@
             <div class="social-media">
               <ul class="media">
                 <li>
-                  <a href="#" class="media-detail">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="media-detail">
+                  <a
+                    href="https://twitter.com/jarvis_codes"
+                    class="media-detail"
+                  >
                     <ion-icon name="logo-twitter"></ion-icon>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="media-detail">
-                    <ion-icon name="globe-outline"></ion-icon>
+                  <a
+                    href="https://linkedin.com/in/ochieng-jarvis-77499b246"
+                    class="media-detail"
+                  >
+                    <ion-icon name="logo-linkedin"></ion-icon>
                   </a>
                 </li>
                 <li>
                   <a href="#" class="media-detail">
-                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="mailto:johnsonmakings@gmail.com"
+                    class="media-detail"
+                  >
+                    <ion-icon name="globe-outline"></ion-icon>
                   </a>
                 </li>
               </ul>
